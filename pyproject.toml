@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pd-challenge"
+authors = [{ name = "nikhil153" }]
+version = "0.1.0"
+
+
+dependencies = [
+    "pandas",
+    "numpy"
+]
+
+[tool.codespell]
+skip = '.git,.github,*.pdf,*.svg,pyproject.toml,*.ipynb,*.html,ppmi_imaging_descriptions.json'
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+combine_as_imports = true
+line_length = 88
+profile = "black"
+skip_gitignore = true
