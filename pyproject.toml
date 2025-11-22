@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [tool.codespell]
-skip = '.git,.github,*.pdf,*.svg,pyproject.toml,*.ipynb,*.html,ppmi_imaging_descriptions.json'
+skip = '.git,.github,*.pdf,*.svg,pyproject.toml,*.ipynb,*.html'
 
 [tool.black]
 line-length = 88
