@@ -1,7 +1,7 @@
 # PD-challenge-datasets
 
-Repository to track and describe available **test** datasets for the PD challenge. 
-These datasets are "held-out" to benchmark perfmornaces of ML models submitted under the challenge (TODO: add link). 
+Repository to track and describe available **test** datasets for the PD challenge.
+These datasets are "held-out" to benchmark perfmornaces of ML models submitted under the challenge (TODO: add link).
 
 ## Datasets
 - Node: Neuro
@@ -15,17 +15,18 @@ These datasets are "held-out" to benchmark perfmornaces of ML models submitted u
 - Node: ENIGMA-PD-ext (Future plans)
 
 ## Task
-- Diagnosis classification 
+- Diagnosis classification
 
 ## Modalities
 - T1w MRI
     - FreeSurfer IDPs (DKT atlas)
         - Cortical thickness
-        - Subcortical volumes 
+        - Subcortical volumes
 - Demographics
     - Age
     - Sex
 
 ## Metadata
 - Scanner make and model
-- Acquisition protocol 
+- Acquisition protocol
+- MRIQC metrics

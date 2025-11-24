@@ -4,3 +4,23 @@ repos:
   hooks:
     - id: codespell
       args: ["--skip=docs/*,notebooks/*"]
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-added-large-files
+- repo: local
+  hooks:
+    - id: clean-notebooks
+      name: Remove output from Jupyter Notebooks
+      entry: jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace
+      language: system
+      files: \.ipynb$
+      pass_filenames: true
+- repo: https://github.com/psf/black
+  rev: 23.3.0
+  hooks:
+  - id: black
+    language_version: python3
